@@ -2,3 +2,4 @@ venv
 finalnetworksecurity.pdf
 .env
 *.pyc
+logs
