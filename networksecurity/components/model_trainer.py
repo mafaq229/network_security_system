@@ -22,8 +22,8 @@ dagshub.init(repo_owner='muhammadafaq1999', repo_name='network_security_system',
 
 
 class ModelTrainer:
-    def __init__(self, model_trainer_config: ModelTrainerConfig, 
-                 data_transformation_artifact: DataTransformationArtifact):
+    def __init__(self, data_transformation_artifact: DataTransformationArtifact, 
+                 model_trainer_config: ModelTrainerConfig):
         try:
             self.model_trainer_config = model_trainer_config
             self.data_transformation_artifact = data_transformation_artifact
