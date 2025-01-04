@@ -80,9 +80,9 @@ jobs:
         run: |
          docker pull ${{ secrets.AWS_ECR_LOGIN_URI }}/${{ secrets.ECR_REPOSITORY_NAME }}:latest
       
-      - name: Stop and remove container if running
-        run: |
-         docker ps -q --filter "name=network-security-project-1" | grep -q . && docker stop network-security-project-1 && docker rm -fv network-security-project-1
+      # - name: Stop and remove container if running
+      #   run: |
+      #    docker ps -q --filter "name=network-security-project-1" | grep -q . && docker stop network-security-project-1 && docker rm -fv network-security-project-1
 
       - name: Run Docker Image to serve users
         run: |
